@@ -1,133 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 
+<!-- navbar -->
 <body>
-  <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: Consolas">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/Web%20Application/assets/images/brand.png" alt="brand_logo" height="40" class="d-inline-block align-text-top"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" style="background-color: #0E8EA8; font-display: #fff;">Dashboard</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #0E8EA8; font-display: #fff;">
-                  Inventory
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #83D1E1; font-display: #212529;">
-                  <li><a class="dropdown-item" href="#">Search</a></li>
-                  <li><a class="dropdown-item" href="#">Add</a></li>
-                  <li><a class="dropdown-item" href="#">Remove</a></li>
-                </ul>
-              </li>
+                <li class="nav-item">
+                    <!-- when click Dashboard, user will navigate to the main Reception Management Dashboard-->
+                    <a class="nav-link active" aria-current="page" href="index.html">Dashboard</a>
+                </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #0E8EA8; font-display: #fff;">
-                    Orders
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #83D1E1; font-display: #212529;">
-                    <li><a class="dropdown-item" href="#">Search</a></li>
-                    <li><a class="dropdown-item" href="#">Add</a></li>
-                    <li><a class="dropdown-item" href="#">Remove</a></li>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Inventory</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">Search</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Add</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Remove</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false"> Orders </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">Search</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Add</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Remove</a>
+                        </li>
                     </ul>
             </ul>
-          </div>
         </div>
-      </nav>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <script src="wdt_app.js"></script>
+    </div>
+</nav>
 </body>
 
-<div class="container border p-5 my-5">
-  <!-- write text middle of the page -->
-  <h1 class="text-center">Reception Management Dashboard</h1>
-  <h3 class="text-center">Staff</h3>
-  <!-- create a table with 6 rows and 8 columns -->
-  <table class="table table-bordered">
-      <thead>
-          <tr>
-              <!-- blue background and white text -->
-              <th scope="col" class="bg-primary text-white">Picture</th>
-              <th scope="col" class="bg-primary text-white">Name</th>
-              <th scope="col" class="bg-primary text-white">Surname</th>
-              <th scope="col" class="bg-primary text-white">Email address</th>
-              <th scope="col" class="bg-primary text-white">Status</th>
-              <th scope="col" class="bg-primary text-white">Out Time</th>
-              <th scope="col" class="bg-primary text-white">Duration</th>
-              <th scope="col" class="bg-primary text-white">Expected Return Time</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-          </tr>
-          <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-          </tr>
-          <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-          </tr>
-          <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-          </tr>
-          <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-          </tr>
-      </tbody>
-  </table>
+<!-- Staff Table -->
+<div class="container p-5 my-5 table-responsive-xxl">
 
-  <button type="button" class="btn btn-danger" style="font-family: Consolas; background-color: #dc3545; font-display: #fff;">Out</button>    
-  <button type="button" class="btn btn-success float-end">In</button>
+    <h2 class="text-center">Reception Management Dashboard</h2>
+
+    <h3 class="text-center">Staff</h3>
+    <table id="staffTable" class="table table-bordered container-fluid table-hover table-responsive-xxl">
+        <thead>
+        <tr>
+            <th id="picture" scope="col">Picture</th>
+            <th id="name" scope="col">Name</th>
+            <th id="surname" scope="col">Surname</th>
+            <th id="email" scope="col">Email address</th>
+            <th id="status" scope="col">Status</th>
+            <th id="outTime" scope="col">Out Time</th>
+            <th id="duration" scope="col">Duration</th>
+            <th id="returnTime" scope="col">Expected Return Time</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <button type="button" id="out" onclick="staffOut()" class="btn btn-danger disabled">Out</button>
+    <button type="button" id="in" onclick="staffIn()" class="btn btn-success float-end disabled">In</button>
+
+
+
+    <h3 class="text-center">Schedule Delivery</h3>
+    <table id="scheduleDeliveryTable" class="table table-bordered container-xxl table-hover table-responsive-xxl">
+        <thead>
+        <tr>
+            <th scope="col">Vehicle</th>
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">Telephone</th>
+            <th scope="col">Address</th>
+            <th scope="col">Return Time</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <!--the user can input values in the cells-->
+            <td>
+                <select id="vehicle_2" aria-label="Default select example">
+                    <option value="Motorcycle">Motorcycle</option>
+                    <option value="Car">Car</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" id="name_2" class="form-control" form="delivery_form">
+            </td>
+            <td>
+                <input type="text" id="surname_2" class="form-control" form="delivery_form">
+            </td>
+            <td>
+                <input type="text" id="telephone_2" class="form-control" form="delivery_form">
+            </td>
+            <td>
+                <input type="text" id="address_2" class="form-control" form="delivery_form">
+            </td>
+            <td>
+                <input type="text" id="returnTime_2" class="form-control" form="delivery_form">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <button type="submit" id="create" form="delivery_form" onclick="addDelivery()" class="btn btn-success float-end">Add</button>
+
+
+
+    <h3 class="text-center">Delivery Board</h3>
+    <table id="deliveryBoardTable" class="table table-bordered container-xxl table-hover table-responsive-xxl">
+        <thead>
+        <tr>
+            <th id="vehicle_3" scope="col">Vehicle</th>
+            <th id="name_3" scope="col">Name</th>
+            <th id="surname_3" scope="col">Surname</th>
+            <th id="telephone_3" scope="col">Telephone</th>
+            <th id="address_3" scope="col">Address</th>
+            <th id="returnTime_3" scope="col">Return Time</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <!--The button should be disabled until the user selects a row-->
+    <button type="button" id="clear" onclick="removeDeliveryDriver()" class="btn btn-danger float-end disabled">Clear</button>
+
 </div>
+
+<!-- Digital Clock -->
+<section class="clock">
+    <div class="container bottom">
+        <div class="row justify-content-end">
+            <div class="col text-end">
+                <p class="clock_text" id="currentDateTime"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Toasts -->
+<div class="toast-container position-absolute top-0 end-0 p-3"></div>
+
+<script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4="
+        crossorigin="anonymous"></script>
+<script src="js/wdt_app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </html>

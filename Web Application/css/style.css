@@ -1,0 +1,76 @@
+/* Web page text elements */
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: Calibri, serif;
+    color: #212529;
+}
+
+/* Navbar */
+.navbar {
+    font-family: "Consolas", serif;
+}
+
+/* Navbar Menu Item */
+.nav-item {
+    background-color: #0e8ea8;
+    color: #fff;
+}
+
+/* Navbar Sub-Menu Item */
+.dropdown-item {
+    background-color: #83d1e1;
+    color: #212529;
+}
+
+/* Positive button */
+.btn-success {
+    font-family: Consolas, serif;
+    background-color: #198754;
+    color: #fff;
+}
+
+/* Table */
+table {
+    border-color: #212529;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+/* Table Header */
+thead {
+    font-family: "Consolas", serif;
+    background-color: #0e8ea8;
+    color: #fff;
+}
+
+/* Table Cell */
+tbody {
+    font-family: "Calibri", serif;
+    background-color: #83d1e1;
+    color: #212529;
+}
+
+/* Negative button */
+.btn-danger {
+    font-family: Consolas, serif;
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.clock {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.clock_text {
+    font-size: 18px;
+    font-family: Consolas, serif;
+    color: #333;
+}
+
+
+
+
+
+
+
